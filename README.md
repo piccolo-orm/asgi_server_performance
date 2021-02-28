@@ -10,7 +10,7 @@ Start one of the ASGI servers, using the named shell script. For example:
 ./daphne.sh
 ```
 
-Start locust, and three workers, each in a separate terminal tab.
+Start Locust, and three workers, each in a separate terminal tab.
 
 ```
 # tab 1
