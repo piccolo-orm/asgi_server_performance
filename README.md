@@ -30,8 +30,7 @@ Open `http://0.0.0.0:8089/` in a browser to see the Locust GUI. Start a new test
 
 <img src="./images/locust_config.png" width="300" alt="Locust Config">
 
------
-## Number of Locust workers
+### Number of Locust workers
 
 The test was run using a 2.7 GHz Core i7 (9th Gen) processor with 6 cores, and 16 GB RAM. Your mileage may vary - make sure there are enough workers that none of them hit 100% CPU usage, as it will give misleading results.
 
@@ -39,8 +38,7 @@ You can see the CPU usage of each worker in the workers tab of the Locust GUI.
 
 ![CPU usage](./images/cpu_usage.png)
 
------
-## Server configuration
+### Server configuration
 
 To get fair results, logging was disabled for each server.
 
