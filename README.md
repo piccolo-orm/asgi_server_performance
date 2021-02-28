@@ -6,13 +6,17 @@ Comparing the performance of various ASGI servers.
 
 Start one of the ASGI servers, using the named shell script. For example:
 
-```
+```bash
+# Increase the max number of files which can be open:
+ulimit -Sn 10000
+
+# Start the server:
 ./daphne.sh
 ```
 
 Start Locust, and three workers, each in a separate terminal tab.
 
-```
+```bash
 # tab 1
 locust --master
 
