@@ -4,6 +4,12 @@ Comparing the performance of various ASGI servers.
 
 ## Setup
 
+Install the requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
 Start one of the ASGI servers, using the named shell script. For example:
 
 ```bash
