@@ -42,7 +42,7 @@ starlette==0.14.2
 toml==0.10.2
 Twisted==21.2.0
 txaio==21.2.1
-urllib3==1.26.3
+urllib3>=1.26.5
 uvicorn==0.13.4
 Werkzeug==1.0.1
 wsproto==1.0.0
