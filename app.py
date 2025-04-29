@@ -1,6 +1,7 @@
+from starlette.applications import Starlette
 from starlette.endpoints import HTTPEndpoint
 from starlette.responses import PlainTextResponse
-from starlette.routing import Router, Route
+from starlette.routing import Route
 
 
 class Home(HTTPEndpoint):
@@ -8,4 +9,9 @@ class Home(HTTPEndpoint):
         return PlainTextResponse("Hello")
 
 
-app = Router(routes=[Route("/", Home)])
+starlette_app = Starlette(routes=[Route("/", Home)])
+
+
+# Now wrap this into a top-level ASGI app callable
+async def app(scope, receive, send):
+    await starlette_app(scope, receive, send)
